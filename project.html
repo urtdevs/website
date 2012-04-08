@@ -82,7 +82,36 @@
             <div class="span3">
               <h2>diRf!</h2>
 	      <p>Official diRf! client</p>
-	      <p><a class="btn" href="http://maps.rapedidiot.com/urt/clients/diRf_ioUrT_21_2238.tgz"><i class="icon-download"></i> Get It!</a></p>
+	      <div class="modal hide" id="dirfmodal">
+                <div class="modal-header">
+                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign"></i></a>
+		  <h3>diRf!</h3>
+		</div>
+		<div class="modal-body">
+                  <h3>Features:</h3>
+		  <uL>
+                    <li><a href="http://www.urbanterror.info/forums/topic/23970-dmahd-new-sound-system/" target="_blank">dmaHD</a></li>
+                    <li>Includes network improvements from <a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
+		    <li>Based on the latest ioq3 svn.</li>
+		    <li>Ability to disable ambient noise:
+		    <pre class="prettyprint">
+s_loopingSoundsEnable (default 1)
+ - Enable/disable environmental sounds in non-base maps.
+		    
+s_baseSoundsEnable (default 1)
+ - Enable/disable environmental sounds in base maps. You must also set s_loopingSoundsEnable to 0 for this to work.
+		    
+s_localBreathingSoundsEnable (default 1)
+ - Set cg_sfxBreathing 1 and disable this cvar to hear only enemies breathe but not yourself.</pre></li>
+		    <li><h4>Not yet approved for league use.</h4></li>
+		  </ul>
+		</div>
+		<div class="modal-footer">
+                  <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/diRf_ioUrT_21_2238.tgz"><i class="icon-info-sign"></i> Get the source</i></a>
+                  <a class="btn btn-success" href="http://maps.rapedidiot.com/urt/clients/dirf.zip"><i class="icon-download-alt"></i> .zip (3M)</i></a>
+                </div>
+              </div><!--/modal-->
+	      <a data-toggle="modal" class="btn" href="#dirfmodal"><i class="icon-info-sign"></i> Learn More</a>
 	    </div>
             <div class="span3">
               <h2>SACC</h2>
