@@ -120,8 +120,29 @@ s_localBreathingSoundsEnable (default 1)
 	    </div>
             <div class="span3">
               <h2>SACC</h2>
+              <div class="modal hide" id="saccmodal">
+                <div class="modal-header">
+                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign"></i></a>
+                  <h3>SACC</h3>
+                </div>
+                <div class="modal-body">
+                  <h3>Features:</h3>
+                  <ul>
+                    <li><strong>Approved for use by FTWGL and STF League.</strong></li>
+                    <li>Enables three network cvars:<pre class="prettyprint">
+cl_maxpackets [30::42] -> sacc_maxpackets [30::125]
+cl_packetdup [1::3] -> sacc_packetdup [0::3]
+rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
+                  </ul>
+                </div><!--/modal-body-->
+                <div class="modal-footer">
+                  <a class="btn btn-info" href="http://sacc.urban-terror.info"><i class="icon-info-sign"></i> Read the wiki</i></a>
+                  <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/sacc-urt-0.1.1-source.zip"><i class="icon-info-sign"></i> Get the source</i></a>
+                  <a class="btn btn-success" href="http://pugbot.com/slack-stuff/sacc-mingw32.exe"><i class="icon-download-alt"></i> .exe (2.2M)</a>
+                </div><!--/modal-footer-->
+              </div><!--/modal-->
 	      <p>Slackin's Advanced Competitive Client.</p>
-	      <p><a class="btn" href="http://sacc.urban-terror.info"><i class="icon-download"></i> Get It!</a></p>
+	      <p><a class="btn" data-toggle="modal" href="#saccmodal"><i class="icon-download"></i> Get It!</a></p>
 	    </div><!--/span-->
 	    <div class="span3">
               <h2>SWiSH</h2>
@@ -175,7 +196,6 @@ s_localBreathingSoundsEnable (default 1)
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
@@ -186,8 +206,5 @@ s_localBreathingSoundsEnable (default 1)
     <script src="js/bootstrap-button.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-
   </body>
 </html>
-
