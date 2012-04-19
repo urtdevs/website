@@ -173,8 +173,35 @@ rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
 	    </div><!--/span-->
 	    <div class="span3">
               <h2>Promod</h2>
+              <div class="modal hide" id="promodmodal">
+                <div class="modal-header">
+                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                  <h3>Promod</h3>
+                </div><!--/modalheader-->
+                <div class="modal-body">
+                  <div class="alert fade in">
+                    <strong>This client as not yet been approved for league use!</strong>
+                  </div><!--/alert-->
+                  <div class="alert fade in">
+                    <strong>This client only works on special promod servers!</strong>
+                  </div><!--/alert-->
+                  <h3>Features:</h3>
+                  <ul>
+                    <li>Locks certain network settings for testing purposes:</li>
+                    <li><code>
+[ snaps: 50 ]
+[ sv_fps: 50 ]
+[ cl_maxpackets: 125 ]
+[ rate: 60000 ]</code></li>
+                  </ul>
+                </div><!--/modalbody-->
+                <div class="modal-footer">
+                  <a class="btn btn-info" href="http://promod.urban-terror.info" target="_blank"><i class="icon-info-sign icon-white"></i> Wiki</a>
+                  <a class="btn btn-info disabled" href="#"><i class="icon-download-alt icon-white"></i> .zip</a>
+                </div><!--/modal-footer-->
+              </div><!--/modal-->
 	      <p>Testing hit detection in Urban Terror.</p>
-	      <p><a class="btn" href="http://promod.urban-terror.info"><i class="icon-download icon-white"></i> Get It!</a></p>
+	      <p><a class="btn" data-toggle="modal" href="promodmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
 	    </div><!--/span-->
 	  </div><!--/row-->
           </section>
