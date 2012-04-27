@@ -1,6 +1,6 @@
 UrTDevs
 =======
-__[Official Site](http://urtdevs.urban-terror.info)__
+__[Official Site](http://urtdevs.com)__
 
 
 Join us on IRC @ Quakenet or Gamesurge, #urtdevs
