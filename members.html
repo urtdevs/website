@@ -103,7 +103,19 @@
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
                 $('#members').dataTable();
-                } );</script>
+        } );
+        oTable=$j('#members').dataTable( {
+            "sPaginationType": "full_numbers",
+            "bFilter": false,
+            "bSearchable":false,
+            "bInfo":false,
+            "fnDrawCallback":function(){
+                if($j("#tablesorter").find("tr:not(.ui-widget-header)").length<=20){
+                   $('#tablesorter div.dataTables_paginate')[0].style.display = "none";
+                } else {
+                   $('#tablesorter div.dataTables_paginate')[0].style.display = "block";
+                }
+            }
+        } );</script>
   </body>
 </html>
-
