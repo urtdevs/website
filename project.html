@@ -40,16 +40,16 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
-	      <li class="dropdown active">
+              <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-	        <ul class="dropdown-menu">
+                <ul class="dropdown-menu">
                   <li><a href="#">About</a></li>
-		  <li class="divider"></li>
-		  <li class="nav-header">Projects:</li>
-		  <li><a href="#client">Clients</a></li>
-		  <li><a href="#pugbot">Pugbot</a></li>
-          <li><a href="#alturt">AltUrT</a></li>
-          <li><a href="#ircbot">IRC Bots</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Projects:</li>
+                  <li><a href="#client">Clients</a></li>
+                  <li><a href="#pugbot">Pugbot</a></li>
+                  <li><a href="#alturt">AltUrT</a></li>
+                  <li><a href="#ircbot">IRC Bots</a></li>
                 </ul><!--/dropdown-->
               </li>
               <li><a href="members.html">Members</a></li>
@@ -62,7 +62,7 @@
 
     <div class="container">
       <div class="row">
-	    <section id="about">
+        <section id="about">
         <div class="span12">
           <div class="hero-unit">
             <h1>What is UrtDevs?</h1>
@@ -73,273 +73,273 @@
       </section>
       <section id="client">
       <div class="row">
-	    <div class="span12">
+        <div class="span12">
           <div class="hero-unit">
             <h1>Urban Terror Clients.</h1>
-	    <p>Custom builds created by the community.</p>
-	  </div>
-	  <div class="row-fluid"> <!--sacc, swish, promod, pugbot, mitsu?-->
+            <p>Custom builds created by the community.</p>
+          </div>
+          <div class="row-fluid"> <!--sacc, swish, promod, pugbot, mitsu?-->
             <div class="span3">
               <h2>diRf!</h2>
-	      <p>Official diRf! client</p>
-	      <div class="modal hide" id="dirfmodal">
+              <p>Official diRf! client</p>
+              <div class="modal hide" id="dirfmodal">
                 <div class="modal-header">
                   <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-		  <h3>diRf!</h3>
-		</div>
-		<div class="modal-body">
+                  <h3>diRf!</h3>
+                </div>
+                <div class="modal-body">
                   <div class="alert alert-error fade in">
-		    <h4 class="alert-heading">This client is in TESTING phase! Run at your own risk!</h4>
-		  </div><!--/alert-->
-                  <div class="alert fade in">
-		    <strong>This client has not yet been approved for league use!</strong>
-		  </div><!--/alert-->
-                  <h3>Features:</h3>
-		  <uL>
-                    <li><a href="http://www.urbanterror.info/forums/topic/23970-dmahd-new-sound-system/" target="_blank">dmaHD</a></li>
-                    <li>Includes network improvements from <a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
-		    <li>Based on the latest ioq3 svn.</li>
-		    <li>Ability to disable ambient noise:
-		    <pre class="prettyprint">
-s_loopingSoundsEnable (default 1)
- - Enable/disable environmental sounds in non-base maps.
-		    
-s_baseSoundsEnable (default 1)
- - Enable/disable environmental sounds in base maps. You must also set s_loopingSoundsEnable to 0 for this to work.
-		    
-s_localBreathingSoundsEnable (default 1)
- - Set cg_sfxBreathing 1 and disable this cvar to hear only enemies breathe but not yourself.</pre></li>
-		  </ul>
-		</div>
-		<div class="modal-footer">
-                  <a class="btn btn-info" href="https://github.com/urtdevs/diRf_client"><i class="icon-info-sign icon-white"></i> GitHub</a>
-	          <a href="https://github.com/urtdevs/diRf_client/downloads" class="btn btn-danger" rel="popover" title="Warning!" data-content="This client is in TESTING phase! Download at your own risk!" target="_blank"><i class="icon-download-alt icon-white"></i> .zip (3M)</a>
-                </div>
-              </div><!--/modal-->
-	      <a data-toggle="modal" class="btn" href="#dirfmodal"><i class="icon-download icon-white"></i> Get It!</a>
-	    </div>
-            <div class="span3">
-              <h2>SACC</h2>
-              <div class="modal hide" id="saccmodal">
-                <div class="modal-header">
-                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                  <h3>SACC</h3>
-                </div>
-                <div class="modal-body">
-                  <div class="alert alert-success fade in">
-                    <strong>Approved for use in FTWGL and STF.</strong>
+                    <h4 class="alert-heading">This client is in TESTING phase! Run at your own risk!</h4>
                   </div><!--/alert-->
-                  <h3>Features:</h3>
-                  <ul>
-                    <li>Enables three network cvars:<pre class="prettyprint">
-cl_maxpackets [30::42] -> sacc_maxpackets [30::125]
-cl_packetdup [1::3] -> sacc_packetdup [0::3]
-rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
-                  </ul>
-                </div><!--/modal-body-->
-                <div class="modal-footer">
-                  <a class="btn btn-info" href="http://sacc.urban-terror.info"><i class="icon-info-sign icon-white"></i> Read the wiki</a>
-                  <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/sacc-urt-0.1.1-source.zip"><i class="icon-info-sign icon-white"></i> Get the source</a>
-                  <a class="btn btn-success" href="http://pugbot.com/slack-stuff/sacc-mingw32.exe"><i class="icon-download-alt icon-white"></i> .exe (2.2M)</a>
-                </div><!--/modal-footer-->
-              </div><!--/modal-->
-	      <p>Slackin's Advanced Competitive Client.</p>
-	      <p><a class="btn" data-toggle="modal" href="#saccmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-	    </div><!--/span-->
-	    <div class="span3">
-              <h2>iourbanterror2</h2>
-              <div class="modal hide" id="rjcmodal">
-                <div class="modal-header">
-                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                  <h3>iourbanterror2</h3>
-                </div><!--/modalheader-->
-                <div class="modal-body">
                   <div class="alert fade in">
                     <strong>This client has not yet been approved for league use!</strong>
                   </div><!--/alert-->
                   <h3>Features:</h3>
-                  <ul>
-                    <li><a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
-                    <li><a href="http://www.urbanterror.info/forums/topic/18972-optimized-exe-builds-of-ioq3-engine/" target="_blank">mitsu's features</a>.</li>
+                  <uL>
+                    <li><a href="http://www.urbanterror.info/forums/topic/23970-dmahd-new-sound-system/" target="_blank">dmaHD</a></li>
+                    <li>Includes network improvements from <a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
+                    <li>Based on the latest ioq3 svn.</li>
+                    <li>Ability to disable ambient noise:
+                      <pre class="prettyprint">
+s_loopingSoundsEnable (default 1)
+ - Enable/disable environmental sounds in non-base maps.
+            
+s_baseSoundsEnable (default 1)
+ - Enable/disable environmental sounds in base maps. You must also set s_loopingSoundsEnable to 0 for this to work.
+            
+s_localBreathingSoundsEnable (default 1)
+ - Set cg_sfxBreathing 1 and disable this cvar to hear only enemies breathe but not yourself.</pre></li>
                   </ul>
-                </div><!--/modalbody-->
+                </div>
                 <div class="modal-footer">
-                  <a class="btn btn-info" href="http://forums.pugbot.com/index.php?topic=862" target="_blank"><i class="icon-info-sign icon-white"></i> Forum thread</a>
-                  <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/ioquake3SWiSH-URT-SRC.zip"><i class="icon-download-alt icon-white"></i> Get the source</a>
-                  <a class="btn btn-success" href="http://maps.rapedidiot.com/urt/clients/iourt2SSE2.zip"><i class="icon-download-alt icon-white"></i> .zip (3.5M)</a>
-                </div><!--/modalfooter-->
-              </div><!--/modal-->
-	      <p>mitsu's build + SACC.</p>
-	      <p><a class="btn" data-toggle="modal" href="#rjcmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-	    </div><!--/span-->
-	    <div class="span3">
-              <h2>Promod</h2>
-              <div class="modal hide" id="promodmodal">
-                <div class="modal-header">
-                  <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                  <h3>Promod</h3>
-                </div><!--/modalheader-->
-                <div class="modal-body">
-                  <div class="alert fade in">
-                    <strong>This client as not yet been approved for league use!</strong>
-                  </div><!--/alert-->
-                  <div class="alert fade in">
-                    <strong>This client only works on special promod servers!</strong>
-                  </div><!--/alert-->
-                  <h3>Features:</h3>
-                  <ul>
-                    <li>Locks certain network settings for testing purposes:</li>
-                    <li><code>
+                  <a class="btn btn-info" href="https://github.com/urtdevs/diRf_client"><i class="icon-info-sign icon-white"></i> GitHub</a>
+                  <a href="https://github.com/urtdevs/diRf_client/downloads" class="btn btn-danger" rel="popover" title="Warning!" data-content="This client is in TESTING phase! Download at your own risk!" target="_blank"><i class="icon-download-alt icon-white"></i> .zip (3M)</a>
+                </div>
+                </div><!--/modal-->
+                <a data-toggle="modal" class="btn" href="#dirfmodal"><i class="icon-download icon-white"></i> Get It!</a>
+              </div>
+              <div class="span3">
+                <h2>SACC</h2>
+                <div class="modal hide" id="saccmodal">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                    <h3>SACC</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class="alert alert-success fade in">
+                      <strong>Approved for use in FTWGL and STF.</strong>
+                    </div><!--/alert-->
+                    <h3>Features:</h3>
+                    <ul>
+                      <li>Enables three network cvars:<pre class="prettyprint">
+cl_maxpackets [30::42] -> sacc_maxpackets [30::125]
+cl_packetdup [1::3] -> sacc_packetdup [0::3]
+rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
+                    </ul>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <a class="btn btn-info" href="http://sacc.urban-terror.info"><i class="icon-info-sign icon-white"></i> Read the wiki</a>
+                      <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/sacc-urt-0.1.1-source.zip"><i class="icon-info-sign icon-white"></i> Get the source</a>
+                      <a class="btn btn-success" href="http://pugbot.com/slack-stuff/sacc-mingw32.exe"><i class="icon-download-alt icon-white"></i> .exe (2.2M)</a>
+                    </div><!--/modal-footer-->
+                  </div><!--/modal-->
+                  <p>Slackin's Advanced Competitive Client.</p>
+                  <p><a class="btn" data-toggle="modal" href="#saccmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+                </div><!--/span-->
+                <div class="span3">
+                  <h2>iourbanterror2</h2>
+                  <div class="modal hide" id="rjcmodal">
+                    <div class="modal-header">
+                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                      <h3>iourbanterror2</h3>
+                    </div><!--/modalheader-->
+                    <div class="modal-body">
+                      <div class="alert fade in">
+                        <strong>This client has not yet been approved for league use!</strong>
+                      </div><!--/alert-->
+                      <h3>Features:</h3>
+                      <ul>
+                        <li><a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
+                        <li><a href="http://www.urbanterror.info/forums/topic/18972-optimized-exe-builds-of-ioq3-engine/" target="_blank">mitsu's features</a>.</li>
+                      </ul>
+                    </div><!--/modalbody-->
+                    <div class="modal-footer">
+                      <a class="btn btn-info" href="http://forums.pugbot.com/index.php?topic=862" target="_blank"><i class="icon-info-sign icon-white"></i> Forum thread</a>
+                      <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/ioquake3SWiSH-URT-SRC.zip"><i class="icon-download-alt icon-white"></i> Get the source</a>
+                      <a class="btn btn-success" href="http://maps.rapedidiot.com/urt/clients/iourt2SSE2.zip"><i class="icon-download-alt icon-white"></i> .zip (3.5M)</a>
+                    </div><!--/modalfooter-->
+                  </div><!--/modal-->
+                  <p>mitsu's build + SACC.</p>
+                  <p><a class="btn" data-toggle="modal" href="#rjcmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+                </div><!--/span-->
+                <div class="span3">
+                  <h2>Promod</h2>
+                  <div class="modal hide" id="promodmodal">
+                      <div class="modal-header">
+                        <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                        <h3>Promod</h3>
+                      </div><!--/modalheader-->
+                      <div class="modal-body">
+                        <div class="alert fade in">
+                          <strong>This client as not yet been approved for league use!</strong>
+                        </div><!--/alert-->
+                        <div class="alert fade in">
+                          <strong>This client only works on special promod servers!</strong>
+                        </div><!--/alert-->
+                        <h3>Features:</h3>
+                        <ul>
+                          <li>Locks certain network settings for testing purposes:</li>
+                          <li><code>
 [ snaps: 50 ]
 [ sv_fps: 50 ]
 [ cl_maxpackets: 125 ]
 [ rate: 60000 ]</code></li>
-                  </ul>
-                </div><!--/modalbody-->
-                <div class="modal-footer">
-                  <a class="btn btn-info" href="http://promod.urban-terror.info" target="_blank"><i class="icon-info-sign icon-white"></i> Wiki</a>
-                  <a class="btn btn-info disabled" href="#"><i class="icon-download-alt icon-white"></i> .zip</a>
-                </div><!--/modal-footer-->
-              </div><!--/modal-->
-	      <p>Testing hit detection in Urban Terror.</p>
-	      <p><a class="btn" data-toggle="modal" href="#promodmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-	    </div><!--/span-->
-	  </div><!--/row-->
-          </section>
-          <section id="pugbot">
-          <div class="row">
-            <div class="span12">
-              <div class="hero-unit">
-                <h1>Pugbot.</h1>
-	        <p>Pickup games done right.</p>
-              </div> 
-	      <div class="page-header">
-                <h1>Get started:</h1>
-              </div>
-	      <div class="row-fluid"><!-- 4 steps to pugbot-->
-                <div class="span3">
-		  <h3>Join.</h3>
-          <p></p>
-		  <p><code>.join</code></p>
-		</div><!--/span-->
-		<div class="span3">
-                  <h3>Vote.</h3>
-                  <p></p>
-		  <p><code>.vote (map)</code></p>
-		</div><!--/span-->
-		<div class="span3">
-                  <h3>Leaving?</h3>
-                  <p></p>
-		  <p><code>.quit</code></p>
-                </div><!--/span-->
-		<div class="span3">
-                  <h3>What are you waiting for?</h3>
-                  <p></p>
-		  <p><a class="btn btn-success" href="http://pugbot.com/page/webchat/" target="_blank">Let's play!</a></p>
-		</div><!--/span-->
-              </div><!--/row-->
-            </div><!--/span-->
-          </div><!--/row-->
+                        </ul>
+                      </div><!--/modalbody-->
+                      <div class="modal-footer">
+                        <a class="btn btn-info" href="http://promod.urban-terror.info" target="_blank"><i class="icon-info-sign icon-white"></i> Wiki</a>
+                        <a class="btn btn-info disabled" href="#"><i class="icon-download-alt icon-white"></i> .zip</a>
+                      </div><!--/modal-footer-->
+                    </div><!--/modal-->
+                    <p>Testing hit detection in Urban Terror.</p>
+                    <p><a class="btn" data-toggle="modal" href="#promodmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+                  </div><!--/span-->
+                </div><!--/row-->
+              </section>
+            <section id="pugbot">
+            <div class="row">
+              <div class="span12">
+                <div class="hero-unit">
+                  <h1>Pugbot.</h1>
+                  <p>Pickup games done right.</p>
+                </div> 
+                <div class="page-header">
+                  <h1>Get started:</h1>
+                </div>
+                <div class="row-fluid"><!-- 4 steps to pugbot-->
+                  <div class="span3">
+                    <h3>Join.</h3>
+                    <p></p>
+                    <p><code>.join</code></p>
+                  </div><!--/span-->
+                  <div class="span3">
+                    <h3>Vote.</h3>
+                    <p></p>
+                    <p><code>.vote (map)</code></p>
+                  </div><!--/span-->
+                  <div class="span3">
+                    <h3>Leaving?</h3>
+                    <p></p>
+                    <p><code>.quit</code></p>
+                  </div><!--/span-->
+                  <div class="span3">
+                    <h3>What are you waiting for?</h3>
+                    <p></p>
+                    <p><a class="btn btn-success" href="http://pugbot.com/page/webchat/" target="_blank">Let's play!</a></p>
+                  </div><!--/span-->
+                </div><!--/row-->
+              </div><!--/span-->
+            </div><!--/row-->
           </section>
           <section id="alturt">
-          <div class="row">
-            <div class="span12">
-              <div class="hero-unit">
-                <div class="modal hide" id="alturtmodal">
-                  <div class="modal-header">
-                    <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                    <h3>AltUrT</h3>
-                  </div><!--/modal-header-->
-                  <div class="modal-body">
-                    <p>A project headed by bludshot and Xamis, AltUrT stands for Alternate Urt Recursive Thing. It is a complete re-write of our favorite game, with freely available source.</p>
-                  </div><!--/modal-body-->
-                  <div class="modal-footer">
-                    <a class="btn btn-info" href="https://github.com/bludshot/alturt" target="_blank">Github</a>
-                  </div><!--/modal-footer-->
-                </div><!--/modal-->
-                <h1>AltUrT.</h1>
-                <p>An open source and community developed version of Urban Terror.</p>
-                <p><a class="btn" href="#alturtmodal" data-toggle="modal">Learn More &raquo;</a></p>
-              </div><!--hero-unit-->
-            </div><!--/span-->
-          </div><!--/row-->
+            <div class="row">
+              <div class="span12">
+                <div class="hero-unit">
+                  <div class="modal hide" id="alturtmodal">
+                    <div class="modal-header">
+                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                      <h3>AltUrT</h3>
+                    </div><!--/modal-header-->
+                    <div class="modal-body">
+                      <p>A project headed by bludshot and Xamis, AltUrT stands for Alternate Urt Recursive Thing. It is a complete re-write of our favorite game, with freely available source.</p>
+                    </div><!--/modal-body-->
+                    <div class="modal-footer">
+                      <a class="btn btn-info" href="https://github.com/bludshot/alturt" target="_blank">Github</a>
+                    </div><!--/modal-footer-->
+                  </div><!--/modal-->
+                  <h1>AltUrT.</h1>
+                  <p>An open source and community developed version of Urban Terror.</p>
+                  <p><a class="btn" href="#alturtmodal" data-toggle="modal">Learn More &raquo;</a></p>
+                </div><!--hero-unit-->
+              </div><!--/span-->
+            </div><!--/row-->
           </section>
           <section id="ircbot">
-          <div class="row">
-            <div class="span12">
-              <div class="hero-unit">
-                <h1>IRC Bots and Services.</h1>
-                <p>IRC Bots and services related to Urban Terror.</p>
-              </div><!--/hero-unit-->
-              <div class="row-fluid">
-                <div class="span4">
-                  <div class="modal hide" id="pengbotmodal">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                      <h3>pengbot</h3>
-                    </div><!--/modal-header-->
-                    <div class="modal-body">
-                      <h3>Features:</h3>
-                      <ul>
-                        <li>Displays PCW/CW/Ringer/Recruit requests</li>
-                        <li>Displays GTV Information</li>
-                      </ul>
-                    </div><!--/modal-body-->
-                    <div class="modal-footer">
-                      <a class="btn btn-info" href="http://pengbot.de/index.php?id=home" target="_blank">Official Site</a>
-                    </div><!--/modal-footer-->
-                  </div><!--/modal-->
-                  <h3>pengbot</h3>
-                  <p>pengbot, for finding high skill confrontations.</p>
-                  <a class="btn" href="#pengbotmodal" data-toggle="modal">Learn More &raquo;</a>
-                </div><!--/span-->
-                <div class="span4">
-                  <div class="modal hide" id="warbotmodal">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                      <h3>warbot</h3>
-                    </div><!--/modal-header-->
-                    <div class="modal-body">
-                      <h3>Features:</h3>
-                      <ul>
-                        <li>Displays PCW/CW/Ringer/Recruit requests</li>
-                        <li>Displays GTV Information</li>
-                      </ul>
-                    </div><!--/modal-body-->
-                    <div class="modal-footer">
-                      <a class="btn btn-info" href="http://warfields.net" target="_blank">Official Site</a>
-                    </div><!--/modal-footer-->
-                  </div><!--/modal-->
-                  <h3>warbot</h3>
-                  <p>warbot/z0rbot, for finding high skill confrontations.</p>
-                  <a class="btn" href="#warbotmodal" data-toggle="modal">Learn More &raquo;</a>
-                </div><!--/span-->
-                <div class="span4">
-                  <div class="modal hide" id="wraithbot">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                      <h3>wraithbot</h3>
-                    </div><!--/modal-header-->
-                    <div class="modal-body">
-                      <div class="alert fade in">
-                        <strong>This project needs a new maintainer!</strong>
-                      </div>
-                      <h3>Features:</h3>
-                      <ul>
-                        <li>Displays clients connected to select TS3 servers.</li>
-                        <li>Displays information about Urban Terror servers.</li>
-                        <li>Displays "isms".</li>
-                        <li>Displays GTV Information.</li>
-                      </ul>
-                    </div><!--/modal-body-->
-                    <div class="modal-footer">
-                      <a class="btn" href="https://github.com/urtdevs/wraithbot" target="_blank">Fork me on GitHub!</a>
-                    </div><!--/modal-footer-->
-                  </div><!--/modal-->
-                  <h3>wraithbot</h3>
-                  <p>Undeadzy's IRC bot.</p>
-                  <a class="btn" href="#wraithbot" data-toggle="modal">Learn More &raquo;</a>
-                </div><!--/span-->
+            <div class="row">
+              <div class="span12">
+                <div class="hero-unit">
+                  <h1>IRC Bots and Services.</h1>
+                  <p>IRC Bots and services related to Urban Terror.</p>
+                </div><!--/hero-unit-->
+                <div class="row-fluid">
+                  <div class="span4">
+                    <div class="modal hide" id="pengbotmodal">
+                      <div class="modal-header">
+                        <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                        <h3>pengbot</h3>
+                      </div><!--/modal-header-->
+                      <div class="modal-body">
+                        <h3>Features:</h3>
+                        <ul>
+                          <li>Displays PCW/CW/Ringer/Recruit requests</li>
+                          <li>Displays GTV Information</li>
+                        </ul>
+                      </div><!--/modal-body-->
+                      <div class="modal-footer">
+                        <a class="btn btn-info" href="http://pengbot.de/index.php?id=home" target="_blank">Official Site</a>
+                      </div><!--/modal-footer-->
+                    </div><!--/modal-->
+                    <h3>pengbot</h3>
+                    <p>pengbot, for finding high skill confrontations.</p>
+                    <a class="btn" href="#pengbotmodal" data-toggle="modal">Learn More &raquo;</a>
+                  </div><!--/span-->
+                  <div class="span4">
+                    <div class="modal hide" id="warbotmodal">
+                      <div class="modal-header">
+                        <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                        h3>warbot</h3>
+                      </div><!--/modal-header-->
+                      <div class="modal-body">
+                        <h3>Features:</h3>
+                        <ul>
+                          <li>Displays PCW/CW/Ringer/Recruit requests</li>
+                          <li>Displays GTV Information</li>
+                        </ul>
+                      </div><!--/modal-body-->
+                      <div class="modal-footer">
+                        <a class="btn btn-info" href="http://warfields.net" target="_blank">Official Site</a>
+                      </div><!--/modal-footer-->
+                    </div><!--/modal-->
+                    <h3>warbot</h3>
+                    <p>warbot/z0rbot, for finding high skill confrontations.</p>
+                    <a class="btn" href="#warbotmodal" data-toggle="modal">Learn More &raquo;</a>
+                  </div><!--/span-->
+                  <div class="span4">
+                    <div class="modal hide" id="wraithbot">
+                      <div class="modal-header">
+                        <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                        <h3>wraithbot</h3>
+                      </div><!--/modal-header-->
+                      <div class="modal-body">
+                        <div class="alert fade in">
+                          <strong>This project needs a new maintainer!</strong>
+                        </div>
+                        <h3>Features:</h3>
+                        <ul>
+                          <li>Displays clients connected to select TS3 servers.</li>
+                          <li>Displays information about Urban Terror servers.</li>
+                          <li>Displays "isms".</li>
+                          <li>Displays GTV Information.</li>
+                        </ul>
+                      </div><!--/modal-body-->
+                      <div class="modal-footer">
+                        <a class="btn" href="https://github.com/urtdevs/wraithbot" target="_blank">Fork me on GitHub!</a>
+                      </div><!--/modal-footer-->
+                    </div><!--/modal-->
+                    <h3>wraithbot</h3>
+                    <p>Undeadzy's IRC bot.</p>
+                    <a class="btn" href="#wraithbot" data-toggle="modal">Learn More &raquo;</a>
+                  </div><!--/span-->
                 </section>
               </div><!--/row-->
             </div><!--/span-->
