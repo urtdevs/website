@@ -7,7 +7,7 @@ app = Flask(__name__)
 def root():
     if 'payload' in request.form.keys():
         obj = json.loads(request.form['payload'])
-        if obj['ref'] == 'refs/head/deploy':
+        if obj['ref'] == 'refs/heads/deploy':
         	os.popen('git pull origin deploy')
     return ":3"
 
