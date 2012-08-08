@@ -5,6 +5,19 @@ __[Official Site](http://urtdevs.com)__
 
 Join us on IRC @ Quakenet or Gamesurge, #urtdevs
 
+Thanks to
+---
+
+* TheRick
+* Slackin
+* Strata
+* SudoKing
+* B1naryTh1ef
+* kbar
+* mission
+* [jasper]
+* knite
+
 Copyright and License
 ======
 __[Bootswatch:](https://github.com/thomaspark/bootswatch)__
