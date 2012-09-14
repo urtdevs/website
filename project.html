@@ -63,23 +63,53 @@
     <div class="container">
       <div class="row">
         <section id="about">
-        <div class="span12">
-          <div class="hero-unit">
-            <h1>What is UrtDevs?</h1>
-            <p>Welcome to UrTDevs! We are a community aimed at supporting the development of Urban Terror. Our main focus is to improve upon the game that we all love. There is active development in many projects related to Urban Terror, including custom clients, custom server binaries, pugbots, and irc bots. Click one of the project links to find out more!</p>
-          </div>
-        </div><!--/span-->
-      </div><!--/row-->
+          <div class="span12">
+            <div class="hero-unit">
+              <h1>What is UrtDevs?</h1>
+              <p>Welcome to UrTDevs! We are a community aimed at supporting the development of Urban Terror. Our main focus is to improve upon the game that we all love. There is active development in many projects related to Urban Terror, including custom clients, custom server binaries, pugbots, and irc bots. Click one of the project links to find out more!</p>
+            </div>
+          </div><!--/span-->
+        </div><!--/row-->
       </section>
       <section id="client">
-      <div class="row">
-        <div class="span12">
-          <div class="hero-unit">
-            <h1>Urban Terror Clients.</h1>
-            <p>Custom builds created by the community.</p>
-          </div>
-          <div class="row-fluid"> <!--sacc, swish, promod, pugbot, mitsu?-->
-            <div class="span3">
+        <div class="row">
+          <div class="span12">
+            <div class="hero-unit">
+              <h1>Urban Terror Clients.</h1>
+              <p>Custom builds created by the community.</p>
+            </div>
+            <div class="row-fluid"> <!--sacc, swish, promod, pugbot, mitsu?-->
+              <div class="span3">
+                <h2>UrTDevs-Client</h2>
+                <div class="modal hide" id="urtdevsclientmodal">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                    <h3>UrtDevs-Client</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class="alert fade in">
+                      <strong>This client has not yet been approved for league use!</strong>
+                    </div><!--/alert-->
+                    <h3>Features:</h3>
+                    <ul>
+                      <li>Enables three network cvars (from SACC):<pre class="prettyprint">
+cl_maxpackets [30::42] -> sacc_maxpackets [30::125]
+cl_packetdup [1::3] -> sacc_packetdup [0::3]
+rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
+                      <li>Enables splash screen:<pre class="prettyprint">
+com_nosplash [0|1]</pre>
+                      <li>Includes <a href="http://www.urbanterror.info/forums/topic/23970-dmahd-new-sound-system/">dmaHD</a></li>
+                    </ul>
+                  </div><!--/modal-body-->
+                  <div class="modal-footer">
+                    <a class="btn btn-info" href="https://github.com/rjc862003/UrTDevs-Client"><i class="icon-info-sign icon-white"></i> GitHub</a>
+                    <a href="https://github.com/rjc862003/UrTDevs-Client/downloads" class="btn btn-danger" rel="popover" title="Warning!" data-content="This client is in TESTING phase! Download at your own risk!" target="_blank"><i class="icon-download-alt icon-white"></i> Download</a>
+                  </div><!--/modal-footer-->
+                </div><!--/modal-->
+                <p>Slackin's Advanced Competitive Client.</p>
+                <p><a class="btn" data-toggle="modal" href="#urtdevsclientmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+              </div><!--/span-->
+              <div class="span3">
                 <h2>SACC</h2>
                 <div class="modal hide" id="saccmodal">
                   <div class="modal-header">
@@ -97,77 +127,77 @@ cl_maxpackets [30::42] -> sacc_maxpackets [30::125]
 cl_packetdup [1::3] -> sacc_packetdup [0::3]
 rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
                     </ul>
-                    </div><!--/modal-body-->
-                    <div class="modal-footer">
-                      <a class="btn btn-info" href="http://sacc.urban-terror.info"><i class="icon-info-sign icon-white"></i> Read the wiki</a>
-                      <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/sacc-urt-0.1.1-source.zip"><i class="icon-info-sign icon-white"></i> Get the source</a>
-                      <a class="btn btn-success" href="http://pugbot.com/slack-stuff/sacc-mingw32.exe"><i class="icon-download-alt icon-white"></i> .exe (2.2M)</a>
-                    </div><!--/modal-footer-->
-                  </div><!--/modal-->
-                  <p>Slackin's Advanced Competitive Client.</p>
-                  <p><a class="btn" data-toggle="modal" href="#saccmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-                </div><!--/span-->
-                <div class="span3">
-                  <h2>iourbanterror2</h2>
-                  <div class="modal hide" id="rjcmodal">
-                    <div class="modal-header">
-                      <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                      <h3>iourbanterror2</h3>
-                    </div><!--/modalheader-->
-                    <div class="modal-body">
-                      <div class="alert fade in">
-                        <strong>This client has not yet been approved for league use!</strong>
-                      </div><!--/alert-->
-                      <h3>Features:</h3>
-                      <ul>
-                        <li><a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
-                        <li><a href="http://www.urbanterror.info/forums/topic/18972-optimized-exe-builds-of-ioq3-engine/" target="_blank">mitsu's features</a>.</li>
-                      </ul>
-                    </div><!--/modalbody-->
-                    <div class="modal-footer">
-                      <a class="btn btn-info" href="http://forums.pugbot.com/index.php?topic=862" target="_blank"><i class="icon-info-sign icon-white"></i> Forum thread</a>
-                      <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/ioquake3SWiSH-URT-SRC.zip"><i class="icon-download-alt icon-white"></i> Get the source</a>
-                      <a class="btn btn-success" href="http://maps.rapedidiot.com/urt/clients/iourt2SSE2.zip"><i class="icon-download-alt icon-white"></i> .zip (3.5M)</a>
-                    </div><!--/modalfooter-->
-                  </div><!--/modal-->
-                  <p>mitsu's build + SACC.</p>
-                  <p><a class="btn" data-toggle="modal" href="#rjcmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-                </div><!--/span-->
-                <div class="span3">
-                  <h2>Promod</h2>
-                  <div class="modal hide" id="promodmodal">
-                      <div class="modal-header">
-                        <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
-                        <h3>Promod</h3>
-                      </div><!--/modalheader-->
-                      <div class="modal-body">
-                        <div class="alert fade in">
-                          <strong>This client as not yet been approved for league use!</strong>
-                        </div><!--/alert-->
-                        <div class="alert fade in">
-                          <strong>This client only works on special promod servers!</strong>
-                        </div><!--/alert-->
-                        <h3>Features:</h3>
-                        <ul>
-                          <li>Locks certain network settings for testing purposes:</li>
-                          <li><code>
+                  </div><!--/modal-body-->
+                  <div class="modal-footer">
+                    <a class="btn btn-info" href="http://sacc.urban-terror.info"><i class="icon-info-sign icon-white"></i> Read the wiki</a>
+                    <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/sacc-urt-0.1.1-source.zip"><i class="icon-info-sign icon-white"></i> Get the source</a>
+                    <a class="btn btn-success" href="http://pugbot.com/slack-stuff/sacc-mingw32.exe"><i class="icon-download-alt icon-white"></i> .exe (2.2M)</a>
+                  </div><!--/modal-footer-->
+                </div><!--/modal-->
+                <p>Slackin's Advanced Competitive Client.</p>
+                <p><a class="btn" data-toggle="modal" href="#saccmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+              </div><!--/span-->
+              <div class="span3">
+                <h2>iourbanterror2</h2>
+                <div class="modal hide" id="rjcmodal">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                    <h3>iourbanterror2</h3>
+                  </div><!--/modalheader-->
+                  <div class="modal-body">
+                    <div class="alert fade in">
+                      <strong>This client has not yet been approved for league use!</strong>
+                    </div><!--/alert-->
+                    <h3>Features:</h3>
+                    <ul>
+                      <li><a href="http://sacc.urban-terror.info" target="_blank">SACC</a>.</li>
+                      <li><a href="http://www.urbanterror.info/forums/topic/18972-optimized-exe-builds-of-ioq3-engine/" target="_blank">mitsu's features</a>.</li>
+                    </ul>
+                  </div><!--/modalbody-->
+                  <div class="modal-footer">
+                    <a class="btn btn-info" href="http://forums.pugbot.com/index.php?topic=862" target="_blank"><i class="icon-info-sign icon-white"></i> Forum thread</a>
+                    <a class="btn btn-info" href="http://maps.rapedidiot.com/urt/clients/ioquake3SWiSH-URT-SRC.zip"><i class="icon-download-alt icon-white"></i> Get the source</a>
+                    <a class="btn btn-success" href="http://maps.rapedidiot.com/urt/clients/iourt2SSE2.zip"><i class="icon-download-alt icon-white"></i> .zip (3.5M)</a>
+                  </div><!--/modalfooter-->
+                </div><!--/modal-->
+                <p>mitsu's build + SACC.</p>
+                <p><a class="btn" data-toggle="modal" href="#rjcmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+              </div><!--/span-->
+              <div class="span3">
+                <h2>Promod</h2>
+                <div class="modal hide" id="promodmodal">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal"><i class="icon-remove-sign icon-white"></i></a>
+                    <h3>Promod</h3>
+                  </div><!--/modalheader-->
+                  <div class="modal-body">
+                    <div class="alert fade in">
+                      <strong>This client as not yet been approved for league use!</strong>
+                    </div><!--/alert-->
+                    <div class="alert fade in">
+                      <strong>This client only works on special promod servers!</strong>
+                    </div><!--/alert-->
+                    <h3>Features:</h3>
+                    <ul>
+                      <li>Locks certain network settings for testing purposes:</li>
+                      <li><code>
 [ snaps: 50 ]
 [ sv_fps: 50 ]
 [ cl_maxpackets: 125 ]
 [ rate: 60000 ]</code></li>
-                        </ul>
-                      </div><!--/modalbody-->
-                      <div class="modal-footer">
-                        <a class="btn btn-info" href="http://promod.urban-terror.info" target="_blank"><i class="icon-info-sign icon-white"></i> Wiki</a>
-                        <a class="btn btn-info disabled" href="#"><i class="icon-download-alt icon-white"></i> .zip</a>
-                      </div><!--/modal-footer-->
-                    </div><!--/modal-->
-                    <p>Testing hit detection in Urban Terror.</p>
-                    <p><a class="btn" data-toggle="modal" href="#promodmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
-                  </div><!--/span-->
-                </div><!--/row-->
-              </section>
-            <section id="pugbot">
+                    </ul>
+                  </div><!--/modalbody-->
+                  <div class="modal-footer">
+                    <a class="btn btn-info" href="http://promod.urban-terror.info" target="_blank"><i class="icon-info-sign icon-white"></i> Wiki</a>
+                    <a class="btn btn-info disabled" href="#"><i class="icon-download-alt icon-white"></i> .zip</a>
+                  </div><!--/modal-footer-->
+                </div><!--/modal-->
+                <p>Testing hit detection in Urban Terror.</p>
+                <p><a class="btn" data-toggle="modal" href="#promodmodal"><i class="icon-download icon-white"></i> Get It!</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+          </section>
+          <section id="pugbot">
             <div class="row">
               <div class="span12">
                 <div class="hero-unit">
@@ -301,10 +331,10 @@ rate [8000::25000] -> sacc_rate [8000::50000]</pre></li>
                     <p>Undeadzy's IRC bot.</p>
                     <a class="btn" href="#wraithbot" data-toggle="modal">Learn More &raquo;</a>
                   </div><!--/span-->
-                </section>
+                </div>
               </div><!--/row-->
             </div><!--/span-->
-          </div><!--/row-->
+          </section>
         </div>
       </div>
     </div><!--/.fluid-container-->
